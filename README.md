@@ -1,27 +1,14 @@
-#Medical Data Visualization
-Data Description
-The dataset provided (medical_examination.csv) contains information about patients, including body measurements, results from various blood tests, and lifestyle choices. The dataset will be utilized to explore the relationship between cardiac disease, body measurements, blood markers, and lifestyle choices.
+# Medical Data Visualization
+## Data Description
+The dataset provided `medical_examination.csv` contains information about patients, including body measurements, results from various blood tests, and lifestyle choices. The dataset will be utilized to explore the relationship between cardiac disease, body measurements, blood markers, and lifestyle choices.
 
 File Information:
-File Name: medical_examination.csv
-Features:
-Feature	Variable Type	Variable	Value Type
-Age	Objective Feature	age	int (days)
-Height	Objective Feature	height	int (cm)
-Weight	Objective Feature	weight	float (kg)
-Gender	Objective Feature	gender	categorical code
-Systolic blood pressure	Examination Feature	ap_hi	int
-Diastolic blood pressure	Examination Feature	ap_lo	int
-Cholesterol	Examination Feature	cholesterol	1: normal, 2: above normal, 3: well above normal
-Glucose	Examination Feature	gluc	1: normal, 2: above normal, 3: well above normal
-Smoking	Subjective Feature	smoke	binary
-Alcohol intake	Subjective Feature	alco	binary
-Physical activity	Subjective Feature	active	binary
-Presence or absence of cardiovascular disease	Target Variable	cardio	binary
-Tasks
-Create a chart: Generate a chart similar to examples/Figure_1.png. Display the counts of good and bad outcomes for the cholesterol, gluc, alco, active, and smoke variables for patients with cardio=1 and cardio=0 in different panels.
+File Name: `medical_examination.csv`
 
-Add an overweight column: Calculate BMI for each patient and determine if a person is overweight. If BMI > 25, set the overweight value to 1, otherwise 0.
+Tasks
+Create a chart: Generate a chart similar to examples/Figure_1.png. Display the counts of good and bad outcomes for the `cholesterol`, `gluc`, `alco`, `active`, and `smoke` variables for patients with cardio= 1 and cardio= 0 in different panels.
+
+Add an `overweight` column: Calculate BMI for each patient and determine if a person is overweight. If BMI > 25, set the overweight value to 1, otherwise 0.
 
 Normalize the data: Make 0 always represent good and 1 always represent bad. For cholesterol and glucose variables, if the value is 1, set it to 0; if it's more than 1, set it to 1.
 
